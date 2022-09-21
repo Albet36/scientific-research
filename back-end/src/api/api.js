@@ -1,0 +1,12 @@
+import express from 'express';
+import { data, infoUser,  login,register } from '../Controllers/auth.js';
+import { classss } from '../Controllers/class.js';
+const  api = express.Router();
+api.post('/auth/login',login);
+api.post('/auth/register',register);
+api.get('/infoUser',infoUser);
+api.get('/query',data);
+api.post('/class',classss);
+// api.put('/');
+// api.delete('/');
+export default api;
