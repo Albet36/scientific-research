@@ -4,6 +4,11 @@ const authSchema =  mongoose.Schema(
     // idAccount: Number,
     username: String,
     password: String,
+    name: String,
+    age: String,
+    address: String,
+    email: String,
+    phone: String,
     role: String,
     student: 
     [{
